@@ -3,6 +3,25 @@
   margin: 0 auto;
 }
 
+.btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 16px;
+  padding: 10px 12px;
+
+  font-family: "Karla", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: #333;
+}
+
+.btn-reserve {
+  margin-top: 1.4rem;
+  background: #f4ce14;
+  padding: 10px 20px;
+}
+
 nav {
   height: 80px;
 }
@@ -29,7 +48,7 @@ nav {
 }
 
 .header {
-  padding: 3rem 0;
+  padding: 2rem 0;
   background: #495e57;
 }
 
@@ -42,8 +61,27 @@ nav {
   width: 50%;
 }
 
-/* .header-wrapper .left .title {
-} */
+.header-wrapper .left .head {
+  font-family: "Markazi Text", serif;
+  font-weight: 500;
+  font-size: 64px;
+  color: #f4ce14;
+  line-height: 2.2rem;
+}
+
+.header-wrapper .left .sub-head {
+  color: #edefee;
+  font-size: 40px;
+}
+
+.header-wrapper .left .desc {
+  width: 235px;
+  color: #edefee;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  line-height: 1.3rem;
+  margin: 1rem 0;
+}
 
 .header-wrapper .right {
   width: 50%;
@@ -51,6 +89,260 @@ nav {
 }
 
 .header-wrapper .right img {
-  width: 60%;
+  width: 310px;
+  height: 330px;
+  image-resolution: auto;
   border-radius: 16px;
+  margin-bottom: -10rem;
+}
+
+.highlights {
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+}
+
+.highlights .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.highlights .title h3 {
+  font-family: "Karla", sans-serif;
+  color: #333;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.btn-online-menu {
+  padding: 20px 30px;
+  background: #f4ce14;
+}
+
+.highlights .card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.highlights .card {
+  width: 260px;
+  background-color: #d9d9d9;
+  border-radius: 15px 15px 5px 5px;
+  font-family: "Karla", sans-serif;
+}
+
+.highlights .card .head img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.highlights .card .content {
+  padding: 0.4rem 1.2rem;
+}
+
+.highlights .card .content .title {
+  font-weight: 800;
+  margin: 4px 0;
+  font-size: 18px;
+}
+
+.highlights .card .content .title .price {
+  color: #ff985e;
+}
+
+.highlights .card .content .desc {
+  color: #6f6f6f;
+  font-size: 14px;
+  margin: 1rem 0;
+}
+
+.highlights .card .content .order {
+  padding-bottom: 0.8rem;
+}
+
+.highlights .card .content .order a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 800;
+}
+
+.testimonial {
+  background-color: #495e57;
+  padding: 4rem 0;
+}
+
+.testimonial .title {
+  color: #edefee;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+}
+
+.testimonial .card-wrapper {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-bottom: 3rem;
+}
+
+.testimonial .card {
+  font-family: "Karla", sans-serif;
+  background-color: #d9d9d9;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.testimonial .card .left {
+  width: 40%;
+  align-self: center;
+  text-align: center;
+}
+
+.testimonial .card .left img {
+  width: 50%;
+}
+
+.testimonial .card .right {
+  width: 60%;
+}
+
+.testimonial .card .right .name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.testimonial .card .right p {
+  font-size: 12px;
+  color: #6f6f6f;
+}
+
+.about {
+  padding: 8rem 0;
+}
+
+.about-wrapper {
+  display: flex;
+}
+
+.about .left {
+  width: 50%;
+}
+
+.about .left .head {
+  font-family: "Markazi Text", serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 2.5rem;
+}
+
+.about .left .sub-head {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.about .left .desc {
+  margin-top: 1rem;
+  font-family: "Karla", sans-serif;
+  font-size: 20px;
+}
+
+.about .right {
+  width: 50%;
+
+  position: relative;
+}
+
+.about .right img {
+  position: absolute;
+  width: 60%;
+}
+
+.about .right .img1 {
+  bottom: 30px;
+  left: 140px;
+  z-index: 2;
+}
+
+.about .right .img2 {
+  top: 30px;
+  left: 40px;
+}
+
+.footer {
+  padding: 5rem;
+  background-color: #d9d9d9;
+
+  font-family: "Karla", sans-serif;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .logo {
+  width: 20%;
+}
+
+.footer .logo img {
+  width: 80%;
+}
+
+.footer ul li {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #454545;
+}
+
+.booking {
+  padding: 4rem 0;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+
+  font-family: "Karla", sans-serif;
+  font-weight: 800;
+}
+
+.booking input,
+.booking select {
+  height: 60px;
+  width: 360px;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background: #edefee;
+
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "Karla", sans-serif;
+}
+
+.booking .btn-booking {
+  background: #f4ce14;
+  font-weight: 800;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.confirm {
+  padding: 7rem 0;
+  text-align: center;
+  font-family: "Karla", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
 }

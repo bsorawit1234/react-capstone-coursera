@@ -1,20 +1,30 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import imgFood from "../assets/restauranfood.jpg";
 
-const Header = () => {
+const Header = ({ page }) => {
   return (
     <section className="header">
       <div className="container">
         <div className="header-wrapper">
           <div className="left">
-            <div className="title">Little Lemon</div>
-            <div className="second-title">Chicago</div>
-            <div className="content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus soluta tenetur ea nihil eveniet. Omnis, at. Sint quam
-              omnis recusandae.
+            <div className="head">
+              Little Lemon <br />
+              <span className="sub-head">Chicago</span>
             </div>
-            <button className="btn">Reserve a table</button>
+
+            <div className="desc">
+              We are family owned Mediterranean restaurant, focused on
+              traditional recipes served with a modern twist
+            </div>
+            {page === "home" ? (
+              <Link to="/booking">
+                <button className="btn btn-reserve">Reserve a table</button>
+              </Link>
+            ) : (
+              <div className="head">Reservation</div>
+            )}
           </div>
           <div className="right">
             <img src={imgFood} alt="" />
